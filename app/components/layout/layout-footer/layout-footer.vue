@@ -3,8 +3,8 @@
     <div class="mx-auto max-w-7xl px-6">
       <div class="mb-16 flex flex-col items-start justify-between gap-12 md:flex-row">
         <div class="max-w-xs">
-          <NuxtLink to="/" class="mb-6 flex items-center gap-3">
-            <Icon :name="logo" class="h-8 w-8 text-white" />
+          <NuxtLink class="mb-6 flex items-center gap-3" to="/">
+            <Icon :name="logo" class="h-8 w-8 text-white"/>
             <span class="text-xl font-bold tracking-wider text-white">
               EUPHOTECH
             </span>
@@ -21,27 +21,27 @@
             <h4 class="mb-4 font-medium text-white">Навигация</h4>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/about" class="text-sm text-white/50 transition-colors hover:text-white">
+                <NuxtLink class="text-sm text-white/50 transition-colors hover:text-white" to="/about">
                   О нас
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#services" class="text-sm text-white/50 transition-colors hover:text-white">
+                <NuxtLink class="text-sm text-white/50 transition-colors hover:text-white" to="/#services">
                   Услуги
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#tech" class="text-sm text-white/50 transition-colors hover:text-white">
+                <NuxtLink class="text-sm text-white/50 transition-colors hover:text-white" to="/#tech">
                   Технологии
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/#cases" class="text-sm text-white/50 transition-colors hover:text-white">
+                <NuxtLink class="text-sm text-white/50 transition-colors hover:text-white" to="/#cases">
                   Кейсы
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/blog" class="text-sm text-white/50 transition-colors hover:text-white">
+                <NuxtLink class="text-sm text-white/50 transition-colors hover:text-white" to="/blog">
                   Блог
                 </NuxtLink>
               </li>
@@ -53,18 +53,18 @@
             <ul class="space-y-3">
               <li>
                 <a
-                    href="mailto:hello@euphotech.io"
                     class="text-sm text-white/50 transition-colors hover:text-[#6EE7FF]"
+                    href="mailto:hello@euphotech.io"
                 >
                   hello@euphotech.io
                 </a>
               </li>
               <li>
                 <a
-                    href="https://t.me/euphotech"
-                    target="_blank"
-                    rel="noreferrer"
                     class="text-sm text-white/50 transition-colors hover:text-[#6EE7FF]"
+                    href="https://t.me/euphotech"
+                    rel="noreferrer"
+                    target="_blank"
                 >
                   Telegram: @euphotech
                 </a>
@@ -83,10 +83,10 @@
         </p>
 
         <div class="flex gap-6 text-sm text-white/40">
-          <NuxtLink to="/privacy" class="transition-colors hover:text-white">
+          <NuxtLink class="transition-colors hover:text-white" to="/privacy">
             Политика конфиденциальности
           </NuxtLink>
-          <NuxtLink to="/terms" class="transition-colors hover:text-white">
+          <NuxtLink class="transition-colors hover:text-white" to="/terms">
             Условия использования
           </NuxtLink>
         </div>
@@ -95,7 +95,7 @@
   </footer>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const props = defineProps<{
   logo?: string
 }>()
@@ -105,4 +105,4 @@ const logo = computed(() => props.logo ?? 'icons:logo')
 const currentYear = new Date().getFullYear()
 </script>
 
-<style scoped lang="scss" />
+<style lang="scss" scoped/>

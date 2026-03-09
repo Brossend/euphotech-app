@@ -1,9 +1,13 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage/>
   </NuxtLayout>
 </template>
 
-<script setup lang="ts" />
+<script lang="ts" setup>
+useHead({
+  title: 'Euphotech - Разработка цифровых продуктов',
+})
+</script>
 
-<style lang="scss" scoped />
+<style lang="scss" scoped/>
