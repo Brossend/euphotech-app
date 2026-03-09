@@ -1,5 +1,9 @@
 @import './imports.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", system-ui, -apple-system, sans-serif;
 }
